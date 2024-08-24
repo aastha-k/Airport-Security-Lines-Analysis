@@ -48,6 +48,11 @@ The project simulates different queuing system configurations, including single-
 ### Multi-Server with Finite Buffer (M/M/m/K)
 - **System Capacity**: Shows how multi-server systems handle larger volumes of passengers, reducing congestion.
 
+### Key Metrics
+- **Average Waiting Time**: The average time passengers spend waiting in line before their security checks.
+- **Average Queue Length**: The average number of passengers in the queue at any given time.
+- **System Utilization**: The percentage of time the security scanner is actively processing passengers.
+
 ## Code Explanation
 
 The provided C++ code simulates the above models using the following components:
@@ -65,10 +70,3 @@ The provided C++ code simulates the above models using the following components:
 ## Conclusion
 
 The simulation successfully models various queuing systems, providing insights into how different configurations affect airport security line efficiency. The use of threads and mutexes in C++ ensures a realistic and concurrent simulation, making this a valuable tool for studying and optimizing queuing systems.
-
-## How to Run
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/your-repo/airport-security-lines.git
-   cd airport-security-lines
